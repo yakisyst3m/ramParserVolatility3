@@ -9,8 +9,9 @@
 
 #2022 03 31     v1.0-beta
 #2022 04 01     v1.0-beta    modif global du code
-#2022 04 02     v1.0         changement de convertisseur + correction ramParser
-#2022 11 21     v1.0         vérif pré-requis
+#2022 04 02     v1.0-beta    changement de convertisseur + correction ramParser
+#2022 11 21     v1.0-beta    vérif pré-requis
+#2022 11 22     v1.0         entière modification
 
 
 utilisateur=$(grep 1000 /etc/passwd | awk -F ":" '{print $1}')
