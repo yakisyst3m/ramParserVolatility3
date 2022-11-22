@@ -20,6 +20,16 @@ vert='\e[1;32m'
 bleu='\e[1;34m' 
 neutre='\e[0;m'
 
+# Fonction Aide
+function aide() {
+	echo -e "\n${vert}\t[ - Aide pour utiliser la commande : - ]${neutre}"
+    echo -e	"\tramParserVolatility3 [option] <dossier de recherche>\n"
+    echo -e "\t\t\t\t-h ou --help\tAide" 
+    echo -e "\t\t\t\t-d\t\tChemin du dossier de recherche\n"
+    exit 0
+}
+
+
 # Vérification des paramètres
 if [[ "$1" == "-d"  ]] && [[ ! -z "$2" ]] && [[ -d "$2" ]] ; then
     while getopts ":h:help:d:" opt ; do
@@ -142,17 +152,6 @@ verifInstall_vol3() {
         fi
 
 }
-
-
-# Fonction Aide
-function aide() {
-	echo -e "\n${vert}\t[ - Aide pour utiliser la commande : - ]${neutre}"
-    echo -e	"\tramParserVolatility3 [option] <dossier de recherche>\n"
-    echo -e "\t\t\t\t-h ou --help\tAide" 
-    echo -e "\t\t\t\t-d\t\tChemin du dossier de recherche\n"
-    exit 0
-}
-
 
 
 # Variables
@@ -355,16 +354,16 @@ for imageTrouvee in $(ls $imagesRaw) ; do
         
         # Extraire les infos grâce à Volatility 3
         # Ci-dessous vous pouvez ajouter facilement les plugins qui vous intéresse
-        volHandles
+        #volHandles
         volInfo
-        volProcess    
-        volHivelist    
-        volNetwork
-        volServices
-        volCMD
-        volMalware
-        volPass
-        volMutex
+       # volProcess    
+       # volHivelist    
+       # volNetwork
+       # volServices
+       # volCMD
+       # volMalware
+       # volPass
+       # volMutex
 
         # Convertir les fichiers CSV en XLSX
         csv2xlsx
