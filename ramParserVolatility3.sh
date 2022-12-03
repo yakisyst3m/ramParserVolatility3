@@ -12,7 +12,7 @@
 #2022 04 02     v1.0-beta    changement de convertisseur + correction ramParser
 #2022 11 21     v1.0-beta    vérif pré-requis
 #2022 11 22     v1.0         entière modification
-
+#2022 12 03     v1.0-1.0     perm
 
 utilisateur=$(grep 1000 /etc/passwd | awk -F ":" '{print $1}')
 rouge='\e[1;31m'
@@ -386,7 +386,7 @@ for imageTrouvee in $(ls $imagesRaw) ; do
 done
 
 # Ajout des droits utilisateurs
-chmod -R 777 "$UCNAME"/ && chown -R "$utilisateur": "$UCNAME"/
+chmod -R 750 "$UCNAME"/ && chown -R "$utilisateur": "$UCNAME"/
 
 
 
