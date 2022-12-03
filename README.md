@@ -1,5 +1,5 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/yakisyst3m/ramParserVolatility3/) 
-![GitHub release-date](https://img.shields.io/github/release-date/yakisyst3m/ramParserVolatility3/)
+![GitHub last commit](https://img.shields.io/github/last-commit/yakisyst3m/ramParserVolatility3) 
+![GitHub release-date](https://img.shields.io/github/release-date/yakisyst3m/ramParserVolatility3)
 #  ramParserVolatility 3
 This application searches RAM memories from a folder.
 Steps after launch:
